@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header.component';
-import { NavigationComponent } from './navigation.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HeaderComponent} from './header.component';
+import {NavigationComponent} from './navigation.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -11,4 +11,5 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   declarations: [HeaderComponent, NavigationComponent],
   exports: [HeaderComponent, NavigationComponent]
 })
-export class HeaderModule { }
+export class HeaderModule {
+}
