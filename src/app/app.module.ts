@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import {TestModule} from './test/test.module';
+import { HeaderModule } from './components/header.module';
+//import { NavigationModule } from './components/navigation.module';
+import { TestModule } from './test/test.module';
 
 
 @NgModule({
@@ -11,7 +13,13 @@ import {TestModule} from './test/test.module';
     AppComponent
   ],
   imports: [
-    BrowserModule, TestModule, NgbModule.forRoot()
+    BrowserModule,
+    // bootstrap module
+    NgbModule.forRoot(),
+    // manager modules
+    HeaderModule, 
+    //NavigationModule,
+    TestModule
   ],
   providers: [],
   bootstrap: [AppComponent]
